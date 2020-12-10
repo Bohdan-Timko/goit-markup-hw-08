@@ -1,0 +1,28 @@
+.btn-box {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 174px;
+  margin: 0;
+}
+.btn-nav {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-text-cl);
+  background-color: var(--button);
+  border-radius: 4px;
+  border-color: inherit;
+  box-shadow: none;
+  background: #f5f4fa;
+  border: none;
+  padding: 6px 22px;
+}
+.btn-box :not(:last-child) {
+  margin-right: 8px;
+}

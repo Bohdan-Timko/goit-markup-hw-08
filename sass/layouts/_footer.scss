@@ -1,0 +1,126 @@
+.basement {
+  background-color: var(--background);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+}
+.basement-info {
+  margin-right: 0;
+  padding-right: 0;
+  display: flex;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.basement-icons {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.social-basement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social-basement:hover,
+.social-basement:focus {
+  background-color: var(--accent-text-cl);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.basement-icons-svg {
+  fill: var(--white);
+  width: 20px;
+  height: 20px;
+}
+.link-address {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--white);
+  font-family: Roboto;
+}
+.link-footer {
+  color: var(--footer);
+  font-style: normal;
+  text-decoration: none;
+}
+.link-footer:hover,
+.link-address:hover,
+.link-footer:focus,
+.link-address:focus,
+nav .current,
+.menu-nav:hover,
+.menu-nav:focus,
+.e-address:hover,
+.e-address:focus {
+  color: var(--accent-text-cl);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-text-cl);
+  margin-top: 25px;
+  border-radius: 2px;
+}
+
+.link-logo-f {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  font-style: normal;
+  color: var(--white);
+  padding-bottom: 20px;
+}
+.menu-address {
+  margin: 0;
+  padding: 0;
+}
+.item-address:not(:last-child) {
+  padding-bottom: 9px;
+}
+.web {
+  color: var(--accent-text-cl);
+}
+.basement-icons-svg {
+  padding: 0;
+  margin: 0;
+  justify-content: start;
+  width: 20px;
+  height: 20px;
+}
+.footer-icons {
+  margin-left: 70px;
+}
+.social-header {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.submition {
+  display: inline-block;
+  margin-top: 30px;
+  color: var(--accent-text-cl);
+  color: white;
+  margin-left: 12px;
+  margin-right: 10px;
+  background-color: var(--accent-text-cl);
+}

@@ -1,0 +1,44 @@
+.main-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-text-cl);
+  background-color: var(--button);
+  border-radius: 4px;
+  border-color: inherit;
+  box-shadow: none;
+  border: none;
+  width: 200px;
+  height: 50px;
+}
+.submition {
+  display: inline-block;
+  margin-top: 30px;
+  color: var(--accent-text-cl);
+  color: white;
+  margin-left: 12px;
+  margin-right: 10px;
+  background-color: var(--accent-text-cl);
+}
+.btn-nav:hover,
+.btn-nav:focus,
+.main-button:hover,
+.main-button:focus {
+  color: var(--white);
+  background-color: var(--accent-text-cl);
+  font-weight: 700;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-button:hover,
+.main-button:focus {
+  color: var(--white);
+  background-color: var(--accent-text-cl);
+  font-weight: 700;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
