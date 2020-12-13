@@ -121,6 +121,8 @@ img {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (min-width: 480px) {
@@ -594,14 +596,22 @@ ul {
 
 @media (min-width: 480px) {
   .menu-values .icon-box {
-    width: 66px;
-    height: 70px;
+    width: 450px;
+    height: 120px;
   }
 }
 
 @media (min-width: 480px) {
   .menu-values .featues {
     display: inline-block;
+  }
+}
+
+@media (min-width: 480px) {
+  .menu-values .value-icons-svg {
+    display: inline-block;
+    width: 66px;
+    height: 70px;
   }
 }
 
