@@ -1,73 +1,55 @@
 .menu-values {
-  // display: flex;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-  // justify-content: center;
-  // margin: 0;
-  @include for-size(mobile) {
-    width: 480px;
+  @include for-size(desktop) {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    justify-content: center;
+    margin: 0;
   }
-  .values:not(:last-child) {
-    // padding-right: 30px;
-    @include for-size(mobile) {
-    }
+}
+.values:not(:last-child) {
+  @include for-size(desktop) {
+    padding-right: 30px;
   }
-
-  .values {
+}
+.featues {
+  @include for-size(desktop) {
+    padding-bottom: 10px;
   }
-
-  .icon-box {
+}
+.main-text {
+  @include for-size(desktop) {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--grey);
+    margin: 0;
+  }
+}
+.icon-box {
+  @include for-size(desktop) {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--button);
     border-radius: 4px;
     margin-bottom: 30px;
-    @include for-size(mobile) {
-      width: 450px;
-      height: 120px;
-    }
   }
+}
+.value-icons-svg {
+  margin: 0;
+  height: 70px;
+  width: 70px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
-  .featues {
-    // padding-bottom: 10px;
-    @include for-size(mobile) {
-      display: inline-block;
-    }
-  }
-
-  .value-icons-svg {
-    // margin: 0;
-    // height: 70px;
-    // width: 70px;
-    // padding-top: 25px;
-    // padding-bottom: 25px;
-    // display: block;
-    @include for-size(mobile) {
-      display: inline-block;
-      width: 66px;
-      height: 70px;
-    }
-  }
-
-  .section-title {
-    // font-weight: 700;
-    // font-size: 36px;
-    // text-align: center;
-    // line-height: 1.166;
-    // color: var(--main-text-cl);
-    // padding-bottom: 50px;
-    // margin: 0;
-  }
-
-  .main-text {
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--grey);
-    margin: 0;
-
-    @include for-size(mobile) {
-      display: inline-block;
-    }
-  }
+  display: block;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.166;
+  color: var(--main-text-cl);
+  padding-bottom: 50px;
+  margin: 0;
 }

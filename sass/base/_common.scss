@@ -2,12 +2,6 @@ html {
   box-sizing: border-box;
 }
 
-*::after,
-::before {
-  box-sizing: inherit;
-  outline: 2px solid tomato;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -31,7 +25,6 @@ img {
   height: auto;
   max-width: 100%;
 }
-
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -44,60 +37,20 @@ img {
 }
 
 .container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  @include for-size(mobile) {
-    width: 480px;
-  }
-
-  @include for-size(tablet) {
-    width: 768px;
-  }
-
   @include for-size(desktop) {
-    width: 1200px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
-// .box {
-//    width: 480px;
-//    height: 320px;
-//    background-image: url('photo.png');
-//    background-size: 480px 320px;
-//  }
-
-// @media screen and (min-device-pixel-ratio: 2),
-//   screen and (-webkit-min-device-pixel-ratio: 2),
-//   screen and (-o-min-device-pixel-ratio: 2/1),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolution: 2dppx) {
-//   .box {
-//     background-image: url("photo@2x.png");
-//   }
-// }
-
 .main-1200 {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  @include for-size(mobile) {
-    width: 480px;
-  }
-
-  @include for-size(tablet) {
-    width: 768px;
-  }
-
   @include for-size(desktop) {
-    width: 1200px;
+    width: 1230px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
