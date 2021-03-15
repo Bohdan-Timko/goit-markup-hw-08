@@ -10,14 +10,16 @@
   margin: 0;
 }
 .menu-projects {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: -30px;
-  margin-bottom: -30;
-  padding-bottom: 94px;
-  justify-content: center;
+  @include for-size(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: -30px;
+    margin-bottom: -30;
+    padding-bottom: 94px;
+    justify-content: center;
+  }
 }
 
 .project-thumb-discription {

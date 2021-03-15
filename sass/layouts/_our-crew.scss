@@ -2,18 +2,24 @@
   background-color: var(--section-crew);
   margin: 0;
   padding: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-bottom: 94px;
+  @include for-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-bottom: 94px;
+  }
 }
 .team-members {
-  display: block;
+  @include for-size(desktop) {
+    display: block;
+  }
 }
 
 .team {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include for-size(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .member {
   box-sizing: border-box;

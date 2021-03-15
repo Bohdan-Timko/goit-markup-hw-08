@@ -1,7 +1,9 @@
 .permanent-clients {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .clients-icons-svg {
   fill: #afb1b8;
@@ -36,7 +38,9 @@
   fill: var(--clients);
 }
 .clients:not(:last-child) {
-  margin-right: 30px;
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
 }
 .clients-link {
   display: flex;

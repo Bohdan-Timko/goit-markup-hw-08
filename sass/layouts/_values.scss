@@ -5,6 +5,9 @@
     padding-bottom: 94px;
     justify-content: center;
     margin: 0;
+    padding-left: 0;
+  }
+  @include for-size(mobile) {
   }
 }
 .values:not(:last-child) {
@@ -36,20 +39,24 @@
   }
 }
 .value-icons-svg {
-  margin: 0;
-  height: 70px;
-  width: 70px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  @include for-size(desktop) {
+    margin: 0;
+    height: 70px;
+    width: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
-  display: block;
+    display: block;
+  }
 }
 .section-title {
-  font-weight: 700;
-  font-size: 36px;
-  text-align: center;
-  line-height: 1.166;
-  color: var(--main-text-cl);
-  padding-bottom: 50px;
-  margin: 0;
+  @include for-size(desktop) {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.166;
+    color: var(--main-text-cl);
+    padding-bottom: 50px;
+    margin: 0;
+  }
 }
