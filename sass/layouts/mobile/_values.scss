@@ -1,0 +1,62 @@
+.menu-values {
+  @include for-size(desktop) {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+  }
+  @include for-size(mobile) {
+  }
+}
+.values:not(:last-child) {
+  @include for-size(desktop) {
+    padding-right: 30px;
+  }
+}
+.featues {
+  @include for-size(desktop) {
+    padding-bottom: 10px;
+  }
+}
+.main-text {
+  @include for-size(desktop) {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--grey);
+    margin: 0;
+  }
+}
+.icon-box {
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+.value-icons-svg {
+  @include for-size(desktop) {
+    margin: 0;
+    height: 70px;
+    width: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    display: block;
+  }
+}
+.section-title {
+  @include for-size(desktop) {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.166;
+    color: var(--main-text-cl);
+    padding-bottom: 50px;
+    margin: 0;
+  }
+}

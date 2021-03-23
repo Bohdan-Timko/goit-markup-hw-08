@@ -1,0 +1,69 @@
+.permanent-clients {
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.clients-icons-svg {
+  fill: #afb1b8;
+}
+/* Размеры иконок клиентов*/
+.company1 {
+  height: 49px;
+  width: 44px;
+}
+.company2 {
+  height: 52px;
+  width: 40px;
+}
+.company3 {
+  height: 43px;
+  width: 41px;
+}
+.company4 {
+  height: 42px;
+  width: 80px;
+}
+.company5 {
+  height: 47px;
+  width: 59px;
+}
+.company6 {
+  height: 45px;
+  width: 88px;
+}
+.clients {
+  display: inline-block;
+  fill: var(--clients);
+}
+.clients:not(:last-child) {
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--clients);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 90px;
+  width: 170px;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-text-cl);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-link:hover .clients-icons-svg,
+.clients-link:focus .clients-icons-svg {
+  fill: var(--accent-text-cl);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-section {
+  margin-bottom: 94px;
+}
